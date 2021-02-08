@@ -64,6 +64,14 @@ class TestTriangles(unittest.TestCase):
         # your tests go here.  Include as many tests as you'd like
         self.assertEqual(classifyTriangle(3, 4, 5), 'Right',
                          '3,4,5 is a Right triangle')
+        self.assertEqual(classifyTriangle(100, 100, 100), 'Equilateral',
+                         '100,100,100 is a Equilateral triangle')
+        self.assertEqual(classifyTriangle(60,40,10), 'Right',
+                         '50,50,10 is a Right Triangle')
+        self.assertEqual(classifyTriangle(2, 4, 4), 'Isoceles',
+                         '2,4,4 is a Isoceles triangle')
+        self.assertEqual(classifyTriangle(1, 60, 3), 'Scalene',
+                         '1,60,3 is a Scalene triangle')
 
     def testMyTestSet2(self):
         # define multiple test sets to test different aspects of the code
