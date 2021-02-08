@@ -39,7 +39,7 @@ def classifyTriangle(a, b, c):
         return 'Equilateral'
     elif (a == b and b != c) or (a == c and b != c) or (b == c and b != a):
         return 'Isoceles'
-    elif ((a + b) == (c*c) or (a + c) == (b*b) or (b+c) == (a*a)):
+    elif (((a*a) + (b*b) == (c*c)) or (((a*a) + (c*c)) == (b*b)) or (((b*b) + (c*c)) == (a*a))):
         return 'Right'
     elif (a != b and b != c and a != c):
         return 'Scalene'
@@ -66,8 +66,8 @@ class TestTriangles(unittest.TestCase):
                          '3,4,5 is a Right triangle')
         self.assertEqual(classifyTriangle(100, 100, 100), 'Equilateral',
                          '100,100,100 is a Equilateral triangle')
-        self.assertEqual(classifyTriangle(60,40,10), 'Right',
-                         '50,50,10 is a Right Triangle')
+        self.assertEqual(classifyTriangle(5,12,13), 'Right',
+                         '5,12,13 is a Right Triangle')
         self.assertEqual(classifyTriangle(2, 4, 4), 'Isoceles',
                          '2,4,4 is a Isoceles triangle')
         self.assertEqual(classifyTriangle(1, 60, 3), 'Scalene',
