@@ -10,4 +10,5 @@ A3: No challenges were encountered with the tools.
 
 Q4: Describe the criteria you used to determine that you had sufficient test cases, i.e. how did you know you were done?
 A4: The way that I knew I was done was that I felt my program was adequately tested. I think that because
-I was able to have the correct response for all types of valid triangles then my program was tested thoroughly.
+I was able to have the correct response for all types of valid triangles then my program was tested thoroughly. In testing
+I also came across bugs in the program and fixed them to allow for all my tests to pass.
